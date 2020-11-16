@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 import { environment } from '../../../environments/environment';
-import { LaunchDetails } from '../models/launch-models';
+import { SpaceXLaunchDetails } from '../models/launch-models';
 
 @Injectable({
   providedIn: 'root',
@@ -38,6 +38,6 @@ export class DashboardService {
       const landStatus = isLanded === 'Yes' ? true : false;
       reqUrl = reqUrl + `&land_success=${landStatus}`;
     }
-    return this.http.get<LaunchDetails[]>(reqUrl);
+    return this.http.get<SpaceXLaunchDetails[]>(reqUrl);
   }
 }

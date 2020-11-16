@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { LaunchDetails } from '../models/launch-models';
+import { SpaceXLaunchDetails } from '../models/launch-models';
 import { DashboardService } from '../service/dashboard.service';
 
 @Component({
@@ -14,12 +14,12 @@ export class HomeComponent implements OnInit {
   isLaunched: string;
   isLanded: string;
   recordLimit: number;
-  launchList: LaunchDetails[] = [];
+  launchList: SpaceXLaunchDetails[] = [];
 
   /**
-   * @param dashboardService  Dashboard module related services.
-   * @param route             Current route.
-   * @param router            Router for navigation.
+   *  Dashboard module related services.
+   *  Current route.
+   *  Router for navigation.
    */
   constructor(
     private dashboardService: DashboardService,
@@ -28,15 +28,14 @@ export class HomeComponent implements OnInit {
   ) {}
 
   /**
-   * Do the mandatory actions on component initialization.
+   * Completing the mandatory actions on component initialization.
    */
   ngOnInit() {
     this.getQueryParameters();
   }
 
   /**
-   * Get the query parameters from the URL.
-   * And Load the list of launches.
+   * Get all Parameters from URI
    */
   getQueryParameters() {
     this.recordLimit = 50;
@@ -50,7 +49,7 @@ export class HomeComponent implements OnInit {
 
   /**
    * Action from child component for select/deselect the years.
-   * @param payload  contains property to update and the selection property.
+   * contains property to update and the selection property.
    */
   applyFilters(payload) {
     this.genericFilter(payload);
@@ -59,7 +58,7 @@ export class HomeComponent implements OnInit {
   /**
    * Updating the filter which is been sent from child component.
    * Navigate to a new page.
-   * @param payload contains which property to update and the selection property.
+   * contains which property to update and the selection property.
    */
   genericFilter(payload) {
     this[payload.propertyName] = payload.selection.isSelected
@@ -93,6 +92,6 @@ export class HomeComponent implements OnInit {
         this.isLanded,
         this.recordLimit
       )
-      .subscribe((data: LaunchDetails[]) => (this.launchList = data));
+      .subscribe((data: SpaceXLaunchDetails[]) => (this.launchList = data));
   }
 }

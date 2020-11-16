@@ -1,0 +1,31 @@
+<div class="d-grid launch-item" *ngIf="launchList && launchList.length > 0">
+  <div
+    class="inner-launch-item m-xs p-sm margin-top-sm c-fit-width"
+    *ngFor="let launchItem of launchList"
+  >
+    <img src="{{ launchItem.links.mission_patch_small }}" />
+    <h4 class="launch-title no-margin pt-xs c-fit-width">
+      {{ launchItem.mission_name }} #{{ launchItem.flight_number }}
+    </h4>
+    <h4 class="no-margin pt-xs c-fit-width">Mission Ids:</h4>
+    <li *ngFor="let id of launchItem.mission_id">{{ id }}</li>
+    <div class="d-flex c-fit-width">
+      <h4 class="no-margin pt-xs c-fit-width">Launch Year:</h4>
+      <p class="no-margin pt-xs pl-xs">
+        {{ launchItem.launch_year }}
+      </p>
+    </div>
+    <div class="d-flex c-fit-width">
+      <h4 class="no-margin pt-xs c-fit-width">Successful Launch:</h4>
+      <p class="no-margin pt-xs pl-xs">
+        {{ launchItem.launch_success }}
+      </p>
+    </div>
+    <div class="d-flex c-fit-width">
+      <h4 class="no-margin pt-xs c-fit-width">Successful Landing:</h4>
+      <p class="no-margin pt-xs pl-xs">
+        {{ launchItem.rocket.first_stage.cores[0].land_success }}
+      </p>
+    </div>
+  </div>
+</div>

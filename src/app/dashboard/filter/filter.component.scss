@@ -1,0 +1,31 @@
+.container {
+  background: #fff;
+
+  span {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sub-header {
+    border-bottom: 1px solid;
+    justify-self: center;
+  }
+}
+
+.applied-filter {
+  background: #008000 !important;
+}
+
+.non-filter:hover {
+  background: #008000 !important;
+}
+
+.non-filter {
+  width: 5em;
+  height: 2em;
+  background: #90ee90;
+  border-radius: 0.3em;
+  border: none;
+  margin: 1.5em;
+  cursor: pointer;
+  outline: none;
+}

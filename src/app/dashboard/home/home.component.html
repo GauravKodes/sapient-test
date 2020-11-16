@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="no-margin ml-sm">SpaceX Launch Programs</h1>
+  <div class="d-grid component-wrapper">
+    <app-filter
+      [appliedYear]="appliedYear"
+      [isLaunched]="isLaunched"
+      [isLanded]="isLanded"
+      (applyFilters)="applyFilters($event)"
+    ></app-filter>
+    <app-launch-list [launchList]="launchList"></app-launch-list>
+  </div>
+</div>

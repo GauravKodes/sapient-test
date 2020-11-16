@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background: lightgray;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .d-grid {
+    display: grid;
+  }
+  
+  .no-margin {
+    margin: 0;
+  }
+  
+  .m-xs {
+    margin: 0.5em;
+  }
+  
+  .ml-sm {
+    margin-left: 1em;
+  }
+  
+  .mt-xs {
+    margin-top: 0.5;
+  }
+  
+  .center-align {
+    text-align: center;
+  }
+  
+  .p-sm {
+    padding: 1em;
+  }
+  
+  .pt-xs {
+    padding-top: 0.5em;
+  }
+  
+  .pl-xs {
+    padding-left: 0.5em;
+  }
+  
+  .c-fit-width {
+    width: fit-content;
+  }
+  

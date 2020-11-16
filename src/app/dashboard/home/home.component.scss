@@ -1,0 +1,16 @@
+.component-wrapper {
+  justify-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .component-wrapper {
+    grid-template-columns: 1fr 4fr;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { LaunchDetails } from '../models/launch-models';
+import { SpaceXLaunchDetails } from '../models/launch-models';
 
 @Component({
   selector: 'app-launch-list',
@@ -7,7 +7,7 @@ import { LaunchDetails } from '../models/launch-models';
   styleUrls: ['./launch-list.component.scss'],
 })
 export class LaunchListComponent implements OnInit {
-  @Input() launchList: LaunchDetails[];
+  @Input() launchList: SpaceXLaunchDetails[];
 
   constructor() {}
 

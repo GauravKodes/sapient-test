@@ -1,7 +1,7 @@
 /**
- * List of spacex launch model.
+ * List of spacex launch models.
  */
-export interface LaunchDetails {
+export interface SpaceXLaunchDetails {
   flight_number?: number;
   mission_name?: string;
   mission_id?: string[];

@@ -12,7 +12,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     DashboardModule,
     HttpClientModule

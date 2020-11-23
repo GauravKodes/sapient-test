@@ -10,7 +10,7 @@ To complete Server Side Rendering
     2. Serve with `npm run serve:ssr`
 
 ## For Code : 
-    1. Client Side Code `spaceX-SSR` - branch
+    1. Client Side Code `spaceX-nonSSR` - branch
     2. Server Side Code `master` or `heroku-deploy` - branches. 
 
 ##

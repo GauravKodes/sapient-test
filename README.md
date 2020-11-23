@@ -1,7 +1,7 @@
 # SpaceXSpaient
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
-
+This Project is deployed on : `https://spacex-sapient-demo.herokuapp.com/home`
 
 
 ## Server Side Rendering

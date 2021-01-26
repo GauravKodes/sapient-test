@@ -95,3 +95,4 @@ export class HomeComponent implements OnInit {
       .subscribe((data: SpaceXLaunchDetails[]) => (this.launchList = data));
   }
 }
+ 

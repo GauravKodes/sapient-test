@@ -33,4 +33,4 @@ export interface Filters {
   isSelected: boolean;
   year?: number;
   value?: any;
-}
+} 

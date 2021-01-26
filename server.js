@@ -23,4 +23,4 @@ app.use(express.static('./dist/space-x-spaient'));
 app.get('/*', function (request, response) {
     response.sendFile(path.join(__dirname, '/dist/space-x-spaient/index.html'));
 });
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 8080); 

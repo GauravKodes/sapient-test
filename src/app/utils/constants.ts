@@ -80,7 +80,7 @@ export const LAUNCH = [
 
 /**
  * Landing status to configure.
- * TODO: Can remove the duplication.
+ * TODO:  Can remove the duplication.
  */
 export const LANDING = [
     {

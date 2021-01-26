@@ -12,7 +12,7 @@ const routes: Routes = [
     path: 'filter',
     component: HomeComponent,
   },
-];
+]; 
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

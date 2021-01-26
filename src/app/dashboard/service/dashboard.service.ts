@@ -11,7 +11,7 @@ export class DashboardService {
   /**
    * @param http HttpClient instance.
    */
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   private baseDomainUrl = environment.domainBaseUrl;
 

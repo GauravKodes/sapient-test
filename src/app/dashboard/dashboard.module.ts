@@ -10,4 +10,4 @@ import { LaunchListComponent } from './launch-list/launch-list.component';
   declarations: [FilterComponent, LaunchListComponent, HomeComponent],
   imports: [CommonModule, DashboardRoutingModule],
 })
-export class DashboardModule {}
+export class DashboardModule { }
